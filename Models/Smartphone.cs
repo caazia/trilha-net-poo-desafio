@@ -19,12 +19,13 @@ namespace DesafioPOO.Models
 
         public static void Ligar()
         {
-            Console.WriteLine("Ligando... Aguarde enquanto carrega as configurações...");
+            Console.WriteLine($"Ligando... Aguarde enquanto carrega as configurações...");
         }
 
         public static void ReceberLigacao()
         {
-            Console.WriteLine($"Recebendo ligação do número: 980000000.");
+            Random random = new();
+            Console.WriteLine("Recebendo ligação do número: " + random.Next(980000000, 999999999));
         }
 
         public abstract void InstalarAplicativo(string nomeApp);
