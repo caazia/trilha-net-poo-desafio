@@ -4,7 +4,7 @@ using DesafioPOO.Models;
 
 //Nokia
 Console.WriteLine("Smartphone Nokia:");
-Smartphone nokia = new Nokia(numero: "998123456", modelo: "Modelo 1", imei: "111111111", memoria: 64);
+Nokia nokia = new(numero: "998123456", modelo: "Modelo 1", imei: "111111111", memoria: 64);
 
 Smartphone.Ligar();
 Console.WriteLine("\t");
@@ -14,7 +14,7 @@ Console.ReadKey();
 
 //Iphone
 Console.WriteLine("\nSmartphone Iphone:");
-Smartphone iphone = new Iphone(numero: "995654321", modelo: "Modelo 2", imei: "333333333", memoria: 124);
+Iphone iphone = new(numero: "995654321", modelo: "Modelo 2", imei: "333333333", memoria: 124);
 
 Smartphone.ReceberLigacao();
 Console.WriteLine("\t");
